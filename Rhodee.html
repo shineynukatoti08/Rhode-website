@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>rhode3.O</title>
+  <link rel="stylesheet" href="rhode.css">
+</head>
+<body>
+  <div class="hero-section">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="side-menu" id="sideMenu">
+      <span class="close-btn" onclick="closeMenu()">×</span>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <div class="suggestions" id="suggestions">
+        <ul>
+          <li>Lip case</li>
+          <li>Scented peptide lip tint set</li>
+          <li>The winter kit</li>
+          <li>Snap-on lip case</li>
+          <li>Scented peptide lip tint</li>
+          <li>The rhode kit</li>
+          <li>Peptide eye prep</li>
+          <li>Glazing milk</li>
+          <li>Glazing mist</li>
+          <li>Pocket blush</li>
+          <li>Peptide lip treatment</li>
+          <li>Contact us</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="icons">
+      <span class="wishlist">🤍</span>
+      <span class="cart">🛒</span>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('sideMenu').classList.toggle('active');
+    }
+
+    function closeMenu() {
+      document.getElementById('sideMenu').classList.remove('active');
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const searchInput = document.querySelector(".search input");
+      const suggestions = document.getElementById("suggestions");
+
+      searchInput.addEventListener("focus", function() {
+        suggestions.style.display = "block";
+      });
+
+      searchInput.addEventListener("blur", function() {
+        setTimeout(() => {
+          suggestions.style.display = "none";
+        }, 200);
+      });
+    });
+  </script>
+
+  <div class="below-image-text">
+    <p>Explore the latest from rhode.</p>
+  </div>
+
+  <div class="peptide">
+    <p>◉--Peptides Section--◉</p>
+  </div>
+
+  <div class="image-row">
+    <div class="item">
+      <img src="images/h3.jpg" alt="First image">
+      <p class="titleofh1">The peptide lip tint set</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="item">
+      <img src="images/h7.jpg" alt="Second image">
+      <p class="titleofh1">Lip Case</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="item">
+      <img src="images/h1.jpg" alt="Third image">
+      <p class="titleofh1">meet salty tan —
+      a soft mauve lip tint</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="item">
+      <img src="images/h8.jpg" alt="Fourth image">
+      <p class="titleofh1">The summer combo</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+  </div>
+  <div class="Pocketblush">
+    <p>◉--Pocket Blush--◉</p>
+  </div>
+
+  <div class="Image-row">
+    <div class="Blush">
+      <img src="images/blush1.jpg" alt="blush1">
+      <p class="titleofblushes">toasted teddy</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="Blush">
+      <img src="images/blush2.jpg" alt="blush2">
+      <p class="titleofblushes">spicy marg</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="Blush">
+      <img src="images/blush3.jpg" alt="blush3">
+      <p class="titleofblushes">piggy</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="Blush">
+      <img src="images/setofblush.jpg" alt="setofblush">
+      <p class="titleofblushes">Set of blushes</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+  </div>
+  <div class="Milk">
+    <p>◉--Glazing Milk--◉</p>
+  </div>
+  <div class="GlazingMilk">
+    <div class="Glaze">
+      <img src="images/barrierbutter.jpg" alt="Glazing Milk">
+      <p class="titleofglazing">Barrier Butter</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="Glaze">
+      <img src="images/faceandbody.jpg" alt="Face and Body">
+      <p class="titleofglazing">Face and Body</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="Glaze">
+      <img src="images/rhodekit.jpg" alt="RhodeKit">
+      <p class="titleofglazing">Winter Collection</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+    <div class="Glaze">
+      <img src="images/glazingg.jpg" alt="RhodeKit">
+      <p class="titleofglazing">Rhode Toner</p>
+      <p class="rating">&#9734&#9734&#9734&#9734</p>
+      <button class="Add">Add to cart</button>
+    </div>
+  </div>
+  <div class="Footer">
+    <p class="copyrights">@copyrights reserved</p><br>
+    <a href="https://www.rhodeskin.com/?srsltid=AfmBOooeSln2t4GcvgO2q9IuRKaRyvhOHZudscCYJd85l76HPoAFUo1n" class="copyrights">www.rhode.com</a>
+  </div>
+</body>
+</html>
